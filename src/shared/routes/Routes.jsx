@@ -1,10 +1,10 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import { Layout } from "../../components/layout/layout";
+import { LayoutContent } from "../../components/layout/layout";
 export const Routes = () =>{
     let routes = useRoutes([
         {
-            path: "*", element: <Layout />,
+            path: "*", element: <LayoutContent />,
         },
     ]);
     return routes;

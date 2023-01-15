@@ -1,8 +1,18 @@
+import menu from '../../assets/img/hamburger.png'
 export const Header = () => {
   return (
     <div>
       <div className="header">
-         <h2>Header</h2>
+       <div className='header__inner-content'>
+        <div>
+            <img src={menu} alt="" />
+        </div>
+        <div>
+
+        </div>
+       </div>
+     
+
       </div>
     </div>
   )
