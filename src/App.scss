@@ -27,6 +27,7 @@ display: flex;
   font-size: 2.8rem;
   padding: 2rem 2.6rem;
   overflow: hidden;
+  z-index: -1;
   }
   &__menu{
     ul{
@@ -59,13 +60,50 @@ height: 5rem;
   align-items: center;
 }
 }
-
-
-
+.menu-icon{
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  
+}
+.header-bg{
+  background-color:#3C3B54;
+}
+.header-inner{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-search{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.input-box{
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  width: 30rem;
+  font-family: 'SourceSansPro-Regular';
+  padding-left: 0;
+  color: #4D4F5C !important; 
+  ::placeholder{
+    color: #4D4F5C !important; 
+    font-family: 'SourceSansPro-Regular';
+  }
+}
+.search-icon{
+  width: 2rem;
+}
+.profile-icon{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
 //////Ant Css
-// .ant-layout-sider{
-// min-width: 29rem !;
-// }
 .ant-layout .ant-layout-sider-children {
   height: 100vh ;
   // width: 29rem !important;
@@ -77,10 +115,18 @@ height: 5rem;
   background-color: #43425D !important;  
   
 }
-
+.ant-layout-sider-collapsed{
+  min-width: 0 !important;
+}
 .ant-menu-dark .ant-menu-item-selected{
   background-color: #3C3B54 !important;
   border-left: 0.5rem solid #A3A0FB;
+}
+.ant-layout-sider-collapsed{
+width: 0px !important;
+min-width: 0px !important;
+flex: 0 0 0px !important;
+max-width: 0px !important;
 }
 .ant-menu .ant-menu-item{
   border-radius: 0 !important;
@@ -91,4 +137,31 @@ height: 5rem;
 }
 .ant-menu-inline .ant-menu-item{
   margin: 1rem 0 0 0 !important;
+}
+.ant-layout-header{
+padding: 0 1.5rem !important;
+}
+.ant-layout .ant-layout-header {
+  border-radius: 2.5rem 0 0 0 ;
+}
+.ant-input-prefix{
+  .anticon-search{
+    color: #c3c3d0;
+  }
+}
+.ant-space-item{
+  color: #4D4F5C;
+  font-family: 'SourceSansPro-Regular';
+}
+.ant-space-item{
+  .anticon {
+    color: #4D4F5C;
+    font-family: 'SourceSansPro-Regular';
+  }
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item{
+  font-family: 'SourceSansPro-Regular';
+}
+.ant-dropdown-menu-item-icon{
+  width: 2rem;
 }
