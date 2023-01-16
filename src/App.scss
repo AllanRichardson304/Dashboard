@@ -155,7 +155,7 @@ height: 5rem;
     justify-content: center;
     width: 100%;
     border-bottom: 0.1rem solid #d8d8eb;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
   &__profile-img{
     img{
@@ -239,6 +239,9 @@ height: 5rem;
       margin-top: 2rem;
     }
   }
+  &__gap{
+    gap: 3rem;
+  }
 }
 .d-flex{
   display: flex;
@@ -320,4 +323,19 @@ padding: 0 1.5rem !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
+}
+#doughut-chart{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  canvas{
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
+#line-chart{
+  canvas{
+    width: 100% !important;
+    height: 250px !important;
+  }
 }

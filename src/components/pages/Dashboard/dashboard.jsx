@@ -10,6 +10,70 @@ import whatsapp from '../../../assets/img/whatsapp.png'
 import linkedin from '../../../assets/img/linkedin.png'
 import facebook from '../../../assets/img/facebook.png'
 import more from '../../../assets/img/more-vertical.svg'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend ,CategoryScale,LinearScale,PointElement,LineElement,Title} from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
+// import faker from 'faker';
+ChartJS.register(ArcElement, Tooltip, Legend ,CategoryScale,LinearScale,PointElement,LineElement,Title);
+export const data = {
+  labels: ['France', 'Italy', 'Japan', 'Canada'],
+  datasets: [
+    {
+      label: '# of Votes',
+        legend: {
+          position: 'bottom' 
+        },
+      data: [12, 12, 12, 12],
+      backgroundColor: [
+        '#80e2ff',
+        '#f49fa8',
+        '#ffdf94',
+        '#b5b3fb',
+      ],
+   
+    },
+  ],
+  
+};
+const options = {
+  legend: {
+    display: true,
+    position: "bottom"
+  }
+};
+export const optionsLine = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'bottom',
+    },
+    // title: {
+    //   display: true,
+    //   text: 'Chart.js Line Chart',
+    // },
+  },
+};
+
+const labels = ['Jab', 'Feb', 'Mar', 'Apr', 'May', 'Jun', ];
+
+export const dataLine = {
+  labels,
+  datasets: [
+    {
+      label: 'Products sold',
+      data: [100, 10, 50, 700,0,100],
+      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    },
+    {
+      label: 'Total views',
+      data: [200, 50, 100, 900,80,1500],
+      borderColor: 'rgb(53, 162, 235)',
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+    },
+  ],
+};
+
 export const Dashboard = () => {
     return (
       <div className="dashboard">
@@ -17,8 +81,10 @@ export const Dashboard = () => {
                 <h2>Overview</h2>
                 <button>Add Funds <img src={plus} alt="" /></button>
         </div>
-      <Row>
-      <Col xs={24} sm={24} md={24} lg={24} xl={8}>
+      <Row className='dashboard__gap'>
+        <Col  xs={24} sm={24} md={24} lg={24} xl={16}>
+        <Row className='dashboard__gap'>
+      <Col xs={24} sm={24} md={24} lg={24} xl={11}>
         <div className='dashboard__card'>
           <div className='dashboard__card-title'>
             <h6>Statistics</h6>
@@ -44,18 +110,33 @@ export const Dashboard = () => {
     ]}
   />
           </div>
-          <div></div>
+          <div id="line-chart">
+          <Line options={optionsLine} data={dataLine} />
+          </div>
         </div>
       </Col>
-      <Col xs={24} sm={24} md={24} lg={24} xl={8}>
+      <Col xs={24} sm={24} md={24} lg={24} xl={11}>
         <div className='dashboard__card'>
           <div className='dashboard__card-title'>
             <h6>Sales Distribution</h6>
            
           </div>
+          <div id='doughut-chart'>
+          <Doughnut data={data} options={options} />
+          </div>
         </div>
       </Col>
-      <Col xs={24} sm={24} md={24} lg={24} xl={8}>
+      </Row>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+        <div className='dashboard__card'>
+     
+          <div></div>
+        </div>
+      </Col>
+      
+      </Col>
+      <Row className='dashboard__gap'>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
         <div className='dashboard__card'>
           <div className='dashboard__profile-content'>
             <div className='dashboard__profile-img'>
@@ -118,8 +199,12 @@ export const Dashboard = () => {
                  </div>
            </div>
           </div>
-     
       </Col>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+        <div className='dashboard__card'>
+        </div>
+      </Col>
+      </Row>
       </Row>
       </div>
     )
