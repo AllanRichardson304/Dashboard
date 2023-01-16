@@ -115,7 +115,7 @@ export const LayoutContent = () => {
                 </div>
               </div>
               <div className='header-search'>
-                <Dropdown
+                {/* <Dropdown
                   menu={{
                     itemsnof,
                   }}
@@ -123,10 +123,11 @@ export const LayoutContent = () => {
                 >
                   <a onClick={(e) => e.preventDefault()}>
                     <Space>
-                      <img className='search-icon' src={bell} alt="" />
+                     
                     </Space>
                   </a>
-                </Dropdown>
+                </Dropdown> */}
+                 <img className='search-icon' src={bell} alt="" />
 
                 <Dropdown
                   menu={{

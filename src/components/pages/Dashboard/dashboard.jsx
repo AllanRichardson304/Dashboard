@@ -83,6 +83,71 @@ export const Dashboard = () => {
       <Row className='dashboard__flex-row'>
         <Col xs={24} sm={24} md={24} lg={24} xl={16} >
           <Row className='dashboard__flex-row'>
+          <Col xs={24} sm={24} md={24} lg={24} xl={24} className='mst-2'>
+
+<div className='dashboard__card'>
+  <div className='dashboard__profile-content'>
+    <div className='dashboard__profile-img'>
+      <img src={profileimg} alt="" />
+      <h4>Nick Herasimenka</h4>
+      <p>United States</p>
+      <div className="dashboard__socialmedia">
+        <img src={twitter} alt="" />
+        <img src={facebook} alt="" />
+        <img src={linkedin} alt="" />
+        <img src={whatsapp} alt="" />
+      </div>
+    </div>
+
+  </div>
+  <div className='dashboard__userslist'>
+    <h5>Our Users</h5>
+    <img src={more} alt="" />
+  </div>
+  <div className='dashboard__userslist'>
+    <div className='d-flex'>
+      <div className='dashboard__userprofile'>
+        <img src={profilethree} alt="" />
+      </div>
+      <div className='dashboard__username'>
+        <h4>Drew James</h4>
+        <h6>United States</h6>
+      </div>
+    </div>
+    <div className='dashboard__phtxt'>
+      <h3>Mobile : 8715674877</h3>
+    </div>
+  </div>
+  <div className='dashboard__userslist'>
+    <div className='d-flex'>
+      <div className='dashboard__userprofile'>
+        <img src={profiletwo} alt="" />
+      </div>
+      <div className='dashboard__username'>
+        <h4>Bavid Kames</h4>
+        <h6>United States</h6>
+      </div>
+    </div>
+    <div className='dashboard__phtxt'>
+      <h3>Mobile : 8715674877</h3>
+    </div>
+  </div>
+  <div className='dashboard__userslist'>
+    <div className='d-flex'>
+      <div className='dashboard__userprofile'>
+        <img src={profilefour} alt="" />
+      </div>
+      <div className='dashboard__username'>
+        <h4>Lavid Emes</h4>
+        <h6>United States</h6>
+      </div>
+    </div>
+    <div className='dashboard__phtxt'>
+      <h3>Mobile : 8715674877</h3>
+    </div>
+  </div>
+</div>
+</Col>
             <Col xs={24} sm={24} md={24} lg={24} xl={12} className="pr-2">
               <div className='dashboard__card'>
                 <div className='dashboard__card-title'>
@@ -148,28 +213,28 @@ export const Dashboard = () => {
                       <td>$19,291</td>
                     </tr>
                     <tr>
-                      <td>google.com</td>
+                      <td>facebook.com</td>
                       <td>3746</td>
                       <td>752</td>
                       <td>43%</td>
                       <td>$19,291</td>
                     </tr>
                     <tr>
-                      <td>google.com</td>
+                      <td>twitter.com</td>
                       <td>3746</td>
                       <td>752</td>
                       <td>43%</td>
                       <td>$19,291</td>
                     </tr>
                     <tr>
-                      <td>google.com</td>
+                      <td>Direct, email, IM</td>
                       <td>3746</td>
                       <td>752</td>
                       <td>43%</td>
                       <td>$19,291</td>
                     </tr>
                     <tr>
-                      <td>google.com</td>
+                      <td>linkedin.com</td>
                       <td>3746</td>
                       <td>752</td>
                       <td>43%</td>
@@ -185,7 +250,7 @@ export const Dashboard = () => {
         </Col>
         <Col xs={24} sm={24} md={24} lg={24} xl={8} >
           <Row>
-            <Col xs={24} sm={24} md={24} lg={24} xl={24} className='dashboard__flex-row-block'>
+            <Col xs={24} sm={24} md={24} lg={24} xl={24} className='mt-3 profile-small'>
 
               <div className='dashboard__card'>
                 <div className='dashboard__profile-content'>
