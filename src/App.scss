@@ -11,10 +11,8 @@ body {
  background-color: #F5F7FB;
 }
 .layout{
-display: flex;
-}
-.layout-inner{
-  width: 100%;
+padding: 3rem;
+height: 100%;
 }
 .sidenav{
   width: 29rem;
@@ -103,6 +101,155 @@ height: 5rem;
   height: 4rem;
   border-radius: 50%;
 }
+
+.dashboard{
+  &__title-content{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+      font-size: 2.8rem;
+      font-family: 'SourceSansPro-SemiBold';
+    }
+    button{
+      background-color: #6763E3;
+      height: 4.8rem;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      color: #fff;
+      border-radius: 0.6rem ;
+      font-family: 'SourceSansPro-Regular';
+      padding: 1.4rem;
+      width: 16rem;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      cursor: pointer;
+      img{
+        background-color: #514DDC;
+        border-radius: 50%;
+        width: 2rem;
+      }
+    }
+  }
+  &__card{
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 1rem;
+  }
+  &__card-title{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    h6{
+      color: #4D4F5C;
+      font-size: 1.8rem;
+      font-family: 'SourceSansPro-Regular';
+    }
+  }
+  &__profile-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 0.1rem solid #d8d8eb;
+    padding-bottom: 3rem;
+  }
+  &__profile-img{
+    img{
+      width: 9.6rem;
+      height:  9.6rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    h4{
+      color: #4D4F5C;
+      font-size: 1.8rem;
+      font-family: 'SourceSansPro-Regular';
+    }
+    p{
+      font-size: 1.4rem;
+      color: #43425D;
+      font-family: 'SourceSansPro-Regular';
+      opacity: 0.5;
+
+    }
+  }
+  &__socialmedia{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    img{
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0%;
+    }
+  }
+  &__userslist{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    h5{
+      color: #4D4F5C;
+      opacity: 1;
+      font-size: 1.8rem;
+      font-family: 'SourceSansPro-Regular';
+    }
+  }
+  &__userprofile{
+    img{
+     width: 5rem;
+     height: 5rem;
+     border-radius: 50%;
+    }
+  
+  }
+  &__username{
+    text-align: left !important;
+    margin-left: 2rem;
+    h4{
+      color: #4D4F5C;
+      opacity: 1;
+      font-size: 1.6rem;
+      font-family: 'SourceSansPro-Regular';
+      margin-bottom: 0.5rem;
+    }
+    h6{
+      color: #4D4F5C;
+      opacity: 0.5;
+      font-size: 1.4rem;
+      font-family: 'SourceSansPro-Regular';
+      margin-bottom: 0;
+    }
+  }
+  &__phtxt{
+    display: flex;
+    align-items: baseline;
+    h3{
+      color: #4D4F5C;
+      opacity: 0.5;
+      font-size: 1.4rem;
+      font-family: 'SourceSansPro-Regular';
+      margin-bottom: 0;
+      margin-top: 2rem;
+    }
+  }
+}
+.d-flex{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
 //////Ant Css
 .ant-layout .ant-layout-sider-children {
   height: 100vh ;
@@ -164,4 +311,13 @@ padding: 0 1.5rem !important;
 }
 .ant-dropdown-menu-item-icon{
   width: 2rem;
+}
+.ant-select-selection-item{
+  font-family: 'SourceSansPro-Regular';
+}
+.ant-select:not(:where(.css-dev-only-do-not-override-sk7ap8).ant-select-customize-input) .ant-select-selector{
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }

@@ -149,7 +149,10 @@ export const LayoutContent = () => {
           </Header>
         </div>
         <Content>
+          <div className='layout'>
           <Pageroute></Pageroute>
+          </div>
+  
         </Content>
       </Layout>
     </Layout>
