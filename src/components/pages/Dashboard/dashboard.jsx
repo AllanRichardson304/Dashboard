@@ -35,11 +35,13 @@ export const data = {
   ],
   
 };
-const options = {
-  legend: {
-    display: true,
-    position: "bottom"
-  }
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'bottom',
+    },
+  },
 };
 export const optionsLine = {
   responsive: true,
@@ -47,10 +49,6 @@ export const optionsLine = {
     legend: {
       position: 'bottom',
     },
-    // title: {
-    //   display: true,
-    //   text: 'Chart.js Line Chart',
-    // },
   },
 };
 
@@ -129,8 +127,56 @@ export const Dashboard = () => {
       </Row>
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
         <div className='dashboard__card'>
-     
-          <div></div>
+          <div>
+          <table>
+            <thead>  <tr>
+    <th>Location</th>
+    <th>Views</th>
+    <th>Sales</th>
+    <th>Conversion</th>
+    <th>Total</th>
+
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>google.com</td>
+    <td>3746</td>
+    <td>752</td>
+    <td>43%</td>
+    <td>$19,291</td>
+  </tr>
+  <tr>
+    <td>google.com</td>
+    <td>3746</td>
+    <td>752</td>
+    <td>43%</td>
+    <td>$19,291</td>
+  </tr>
+  <tr>
+    <td>google.com</td>
+    <td>3746</td>
+    <td>752</td>
+    <td>43%</td>
+    <td>$19,291</td>
+  </tr>
+  <tr>
+    <td>google.com</td>
+    <td>3746</td>
+    <td>752</td>
+    <td>43%</td>
+    <td>$19,291</td>
+  </tr>
+  <tr>
+    <td>google.com</td>
+    <td>3746</td>
+    <td>752</td>
+    <td>43%</td>
+    <td>$19,291</td>
+  </tr>
+  </tbody>
+ 
+</table>
+          </div>
         </div>
       </Col>
       
